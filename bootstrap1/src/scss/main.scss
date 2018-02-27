@@ -1,0 +1,58 @@
+/* Custom styles */
+
+$bg-color: #333;
+$primary: #007bff;
+$secondary: #1C5DAB;
+$text-color: #f6f6f6;
+
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+.img-logo {
+  width: 5%;
+}
+
+.btn {
+  font-weight: bold;
+
+  &:hover {
+    background-color: $primary;
+    color: $text-color;
+  }
+}
+
+.navbar {
+  border-bottom: $primary 3px solid;
+  opacity: 0.7;
+}
+
+#home-section {
+  background: url('../img/bg.jpg') no-repeat;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  background-color: $secondary;
+}
+
+.contact-head-section {
+  background-color: $secondary;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  padding: 10em;
+}
