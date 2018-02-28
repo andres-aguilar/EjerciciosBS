@@ -1,0 +1,154 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible", content="ie=edge,chrome=1")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    //- Common meta tags
+    meta(name="author", content="Name")
+    meta(name="description", content="Description here")
+    meta(name="keywords", content="keywords,here")
+    //- Styles
+    link(rel="stylesheet" href="assets/css/bootstrap.css")
+    link(rel="stylesheet" href="assets/css/main.css")
+    //- Font-awesome
+    script(defer, src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    //- Icon
+    link(rel="shortcut icon", href="" type="image/vdn.microsoft.icon")
+    link(rel="icon", href="", sizes="16x16", type="image/png")
+    //- Title
+    title Example 1 - Bootstrap 4
+  body
+    //- Navigation
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top
+      .container
+        a.navbar-brand(href="/")
+          img.img-logo(src="assets/img/logo.png" alt="logo")
+          | Example
+        button.navbar-toggler(type="button" name="button" data-toggle="collapse" data-target="#navbarCollapse")
+          i.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item: a.nav-link(href="#home-section") Home
+            li.nav-item: a.nav-link(href="#info-section") Info
+            li.nav-item: a.nav-link(href="#contact-section") Create
+            li.nav-item: a.nav-link(href="#share-section") Share
+
+    //- Home section
+    header#home-section
+      .dark-overlay
+        .home-inner
+          .container
+            .row
+              .col-lg-8
+                h1.display-4
+                  | Lorem 
+                  strong ipsum
+                  |  dolor.
+                  
+                //- Item
+                .d-flex.flex-row
+                  .p-4
+                    i.fas.fa-arrow-alt-circle-right
+                  .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+                //- Item
+                .d-flex.flex-row
+                  .p-4
+                    i.fas.fa-arrow-alt-circle-right
+                  .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+                //- Item
+                .d-flex.flex-row
+                  .p-4
+                    i.fas.fa-arrow-alt-circle-right
+                  .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+              
+              .col-lg-4
+                .card.text-center
+                  .card-body
+                    h3 Lorem ipsum.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    form(action="#")
+                      .form-group
+                        input.form-control.form-control-lg(placeholder="Username" type="text" name="" value="")
+                      .form-group
+                        input.form-control.form-control-lg(placeholder="Password" type="password" name="" value="")
+                      .form-group
+                        input.form-control.form-control-lg(placeholder="Password" type="password" name="" value="")
+                      //- Button submit
+                      input.btn.btn-outline-light.btn-block(type="submit" name="" value="Send")
+
+    section.info-head-section
+      .container
+        .row
+          .text-center.p-4
+            h2.display-4 Information
+            p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae, ipsa debitis veniam libero nam.
+            button.btn.btn-outline-secondary(type="button" name="button")  Lorem ipsum dolor.
+
+    section.info-section.bg-light.text-muted.py-5(id="#info-section")
+      .container
+        .row
+          .col-md-6
+            img(src="assets/img/img1.png" alt="")
+          .col-md-6
+            h3 Services & products
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, odit earum, provident ab laboriosam eligendi.
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+
+    section.contact-head-section
+      .container
+        .row
+          .text-center.p-4
+            h2.display-4 Information
+            p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae, ipsa debitis veniam libero nam.
+            button.btn.btn-outline(type="button" name="button")  Lorem ipsum dolor. 
+
+    section.contact-section.bg-light.text-muted.py-5(id="#contact-section")
+      .container
+        .row
+          .col-md-6
+            h3 Contact
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, odit earum, provident ab laboriosam eligendi.
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+            //- Item
+            .d-flex.flex-row
+              .p-4
+                i.fas.fa-arrow-alt-circle-right
+              .p-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nobis facere perferendis optio. Neque, facere!
+          .col-md-6
+            img(src="assets/img/img2.png" alt="")
+
+    //- Footer
+    footer.container
+      .row
+        .col-md-12.p-5
+          p.text-center &copy; Copyright 2018 - Lorem ipsum.
+
+    //- JS imports
+    script(src="assets/js/jquery.min.js" charset="utf-8")
+    script(src="assets/js/popper.min.js" charset="utf-8")
+    script(src="assets/js/bootstrap.min.js" charset="utf-8")
+    script(src="assets/js/main.js" charset="utf-8")
