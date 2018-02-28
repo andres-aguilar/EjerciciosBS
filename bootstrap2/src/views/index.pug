@@ -1,0 +1,195 @@
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    //- Common meta tags
+    meta(name="author", content="Name")
+    meta(name="description", content="Description here")
+    meta(name="keywords", content="keywords,here")
+    //- Styles
+    link(rel="stylesheet" href="assets/css/bootstrap.css")
+    link(rel="stylesheet" href="assets/css/main.css")
+    //- Font-awesome
+    script(defer, src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    //- Title
+    title Example 2
+  body
+    <!--[if lte IE 9]>  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p> <![endif] -->
+    //- Navigation bar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      a.navbar-brand(href="#") Example 2
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href="#") Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href="#") Link
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+          button.btn.btn-primary.my-2.my-sm-0(type="submit") Search
+    //- Cover
+    section.cover
+      .cover-text
+        .container
+          .row
+            .col-sm-12
+              h1.display-3  Example 2 with bootstrap 4 
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sed labore dolor? Eveniet, architecto, commodi.
+              form.form-inline.justify-content-center(action="#")
+                .form-group
+                  label.sr-only(for="name") Name
+                  input.form-control.form-control-lg(type="text" placeholder="Name")
+                .form-group
+                  label.sr-only(for="mail") Email
+                  input.form-control.form-control-lg(type="email" placeholder="Email")
+                button.btn.btn-primary.btn-lg(type="submit" name="button") Register
+    //- Carousel
+    section#carousel
+      #carousel-home.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="#carousel-home" data-slide-to="0")
+          li(data-target="#carousel-home" data-slide-to="1")
+          li(data-target="#carousel-home" data-slide-to="2")
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src="assets/img/wreath-842237_1920.jpg" alt="First slide")
+            .carousel-caption.d-none.d-md-block
+              h5 First slide
+              p Lorem ipsum dolor sit amet.
+          .carousel-item
+            img.d-block.w-100(src="assets/img/girl-548946_1920.jpg" alt="Second slide")
+            .carousel-caption.d-none.d-md-block
+              h5 Second slide
+              p Lorem ipsum dolor sit amet.
+          .carousel-item
+            img.d-block.w-100(src="assets/img/woman-695451_1920.jpg" alt="Third slide")
+            .carousel-caption.d-none.d-md-block
+              h5 Third slide
+              p Lorem ipsum dolor sit amet.
+        a.carousel-control-prev(href="#carousel-home" role="button" data-slide="prev")
+          span.carousel-control-prev-icon(aria-hidden="true")
+          span.sr-only Previous
+        a.carousel-control-next(href="#carousel-home" role="button" data-slide="next")
+          span.carousel-control-next-icon(aria-hidden="true")
+          span.sr-only Next
+    //- Startup
+    section#startup
+      .section-content
+        .container
+          h2 About
+          p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum eius ipsa corrupti voluptas delectus reprehenderit unde recusandae enim similique. Esse.
+          .row
+            .col-sm-12
+              .card-deck
+                .card
+                  img.card-img-top(src="assets/img/computer-2076343_1280.jpg" alt="Card image cap")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+                .card
+                  img.card-img-top(src="assets/img/computer-2242262_1280.jpg" alt="Card image cap")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text This card has supporting text below as a natural lead-in to additional content.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+                .card
+                  img.card-img-top(src="assets/img/keyboard-886462_1280.jpg" alt="Card image cap")
+                  .card-body
+                    h5.card-title Card title
+                    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                  .card-footer
+                    small.text-muted Last updated 3 mins ago
+    //- About
+    section.about
+      .section-content
+        .container
+          .col-md-6.text-about
+            h3 About startup
+            p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, molestiae.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quam.
+            h3 Follow me
+            a.btn.btn-sm.btn-secondary-outline(href="#") Facebook
+            a.btn.btn-sm.btn-secondary-outline(href="#") Twitter
+            a.btn.btn-sm.btn-secondary-outline(href="#") Youtube
+    //- News
+    section.news
+      .container
+        .card-columns
+          .card
+            img.card-img-top(src="assets/img/girl-548946_1920.jpg" alt="Card image cap")
+            .card-body
+              h5.card-title Card title that wraps to a new line
+              p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          .card.p-3
+            blockquote.blockquote.mb-0.card-body
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              footer.blockquote-footer
+                small.text-muted Someone famous in 
+                  cite(title="Source Title") Source Title
+          .card
+            img.card-img-top(src="assets/img/woman-camera.jpg" alt="Card image cap")
+            .card-body
+              h5.card-title Card title
+              p.card-text This card has supporting text below as a natural lead-in to additional content.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+          .card.bg-primary.text-white.text-center.p-3
+            blockquote.blockquote.mb-0
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.
+              footer.blockquote-footer
+                small Someone famous in 
+                  cite(title="Source Title") Source Title
+          .card.text-center
+            .card-body
+              h5.card-title Card title
+              p.card-text This card has supporting text below as a natural lead-in to additional content.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+          .card
+            img.card-img(src="assets/img/camera-801924_1280.jpg" alt="Card image")
+          .card.p-3.text-right
+            blockquote.blockquote.mb-0
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              footer.blockquote-footer
+                small.text-muted Someone famous in 
+                  cite(title="Source Title") Source Title
+          .card
+            .card-body
+              h5.card-title Card title
+              p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+              p.card-text
+                small.text-muted Last updated 3 mins ago
+    //- Footer
+    footer.footer
+      .container
+        .row
+          .col-sm-3
+            p Startup
+            p Lorem 
+              a(href="#") ipsum
+          .col-sm-3
+            ul.list-unstyled
+              li: a(href="#") Index
+              li: a(href="#") Startup
+              li: a(href="#") About
+              li: a(href="#") News
+          .col-sm-3
+            ul.list-unstyled
+              li: a(href="#") Facebook
+              li: a(href="#") Twitter
+              li: a(href="#") Youtube
+              li: a(href="#") LinkedIn
+          .col-sm-3
+            h6 Info
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eveniet ullam, quae quidem, illo in unde repellendus alias fugit ea odio dolores aliquid est adipisci deserunt aliquam ad. Enim, modi.
+    //- JS imports
+    script(src="assets/js/jquery.min.js" charset="utf-8")
+    script(src="assets/js/popper.min.js" charset="utf-8")
+    script(src="assets/js/bootstrap.min.js" charset="utf-8")
+    script(src="assets/js/main.js" charset="utf-8")
